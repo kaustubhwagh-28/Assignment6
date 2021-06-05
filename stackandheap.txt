@@ -1,0 +1,19 @@
+1)When you create an object using the new operator, where is the object created? On the stack or on the heap?
+Ans)whenever we create an object.it gets stored on heap
+
+2)Local variables and method parameters are created on the stack or the heap?
+Ans)Local variables and method parameters are stored on the stack.When a new method is invoked, a new block of memory will be created in the Stack. This new block will store the 
+temporary values invoked by the method and references to objects stored in the Heap that are being used by the method.
+
+3)What is the lifetime of a variable that is created on the stack versus the life time of a variable that is created on the heap?
+Ans)The variables which are created on the stack live until their scope ends.whereas the variable that is created on the heap stay on the heap untill we deallocate it using delete
+
+4)Does your language support garbage collection? What is garbage collection?
+Yes,Java supports garbage collection.Garbage means unreferenced objects.garbage collection is a process of destroying the unreferenced objects.
+
+5)Even in a language that supports garbage collection, there can be memory leaks. How are those caused?How can they be avoided?How adversely can memory leaks affect your program?
+Although garbage collection prevents many types of memory leaks, it doesn't prevent all of them. In automatic reference counting systems, such as Perl or Objective-C, memory is leaked 
+whenever there are cyclical references, since the reference count is never decremented to zero. 
+For example, we could use a HashMap as a cache. The map contains references to both the key and value, keeping those objects alive. The garbage collector can't know which values 
+in the cache will be used again and which won't.Memory leak occurs when programmers create a memory in heap and forget to delete it.To avoid memory leaks, memory allocated on heap should 
+always be freed when no longer needed.if there is a lot of memory leakage then the programme might not get execute because of the shortage of memory.

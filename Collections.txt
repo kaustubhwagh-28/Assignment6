@@ -1,0 +1,24 @@
+What is the difference between ArrayList and Vector? 
+ans)Vector and ArrayList both uses Array internally as data structure. They are dynamically resizable. Difference is in the way they are internally resized. By default, Vector doubles the
+ size of its array when its size is increased. But, ArrayList increases by half of its size when its size is increased.
+Therefore as per Java API the only main difference is, Vector’s methods are synchronized and ArrayList’s methods are not synchronized.
+
+2)What is the difference between Hashtable and HashMap?
+HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code whereas Hashtable is synchronized. 
+HashMap allows one null key and multiple null values whereas Hashtable doesn't allow any null key or value.
+
+3)When a list like Vector/ArrayList can be used to store data, why are maps needed? 
+Ans)Maps are used for when you want to associate a key with a value and Lists are an ordered collection. Map is an interface in the Java Collection Framework and a HashMap 
+is one implementation of the Map interface. HashMap are efficient for locating a value based on a key and inserting and deleting values based on a key.
+Lists represent a sequential ordering of elements. Maps are used to represent a collection of key / value pairs.
+A list by definition is ordered. You add items and then you are able to iterate back through the list in the order that you inserted the items. When you add items to a HashMap, 
+you are not guaranteed to retrieve the items in the same order you put them in.
+
+4)When there are lists and Maps, what is the use of having sets? 
+Ans)List in Java provides ordered and indexed collection which may contain duplicates. The Set interface provides an unordered collection of unique objects, i.e. Set doesn't allow 
+duplicates, while Map provides a data structure based on key-value pair and hashing.
+
+5)What is printed when the following code snippet is executed?
+ArrayList list = new ArrayList();
+System.out.println(“ size= ” + list.size() );
+Ans) the answer will be 0.it will print 0.as we havent done any allocation.

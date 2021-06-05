@@ -1,0 +1,9 @@
+What advantages does a link list hold over arrays & vice versa? What should be used in which kind of a situation?
+advantages of linkedlist over array.
+Ans)LinkedList is dynamic.Size is not an issue as compared to arrays.there is no memory wastge in linkedlist.insertion and deletion is easy.
+advantages of array over linkedlist
+in linkedlist extra memory is required for the pointer which is there with each element. Any element in an array can be directly accessed with its index; however in case of a 
+linked list, all the previous elements must be traversed to reach any element. Also, better cache locality in arrays (due to contiguous memory allocation) can significantly improve 
+performance. As a result, some operations (such as modifying a certain element) are faster in arrays
+linked lists should be used for large lists of data where the total number of items in the list is changing. Arrays, on the other hand, are better suited to small lists, where the 
+maximum number of items that could be on the list is known.
